@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+
+  <!--? SEO -->
+  <meta name="description" content="Portfólio da artista de telas Natália. Veja obras, exposições e entre em contato.">
+  <meta name="keywords" content="arte, artista plástica, pintura, escultura, portfólio">
+  <meta name="author" content="Naty Santis">
+
+
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Naty - Artista</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;family=Playfair+Display:wght@400;700&amp;display=swap"
+    rel="stylesheet" />
+  <link href="style.css" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+  <header class="sticky top-0 bg-white z-50 shadow-sm">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <div>
+        <a class="page-link flex items-center" data-page="home" href="#">
+          <span class="h-12 flex justify-center items-center overflow-hidden  ">
+            <img src="assets/lg/lg-Natalia-Art.png" alt="Logo Natalia Santiago"
+              class="h-auto w-auto max-h-full max-w-full object-contain ">
+          </span>
+        </a>
+      </div>
+
+      <nav class="hidden md:flex space-x-8">
+        <a class="page-link nav-link" data-page="home" href="#">Home</a>
+        <a class="page-link nav-link" data-page="gallery" href="#">Galeria</a>
+        <a class="page-link nav-link" data-page="about" href="#">Sobre</a>
+        <a class="page-link nav-link" data-page="contact" href="#">Contato</a>
+        <a class="page-link nav-link" data-page="linktree" href="#">linktree</a>
+      </nav>
+
+      <div class="md:hidden">
+        <button class="text-gray-700" id="mobile-menu-btn">
+          <i class="fas fa-bars text-xl"></i>
+        </button>
+      </div>
+    </div>
+    <div class="hidden px-4 py-3 bg-white md:hidden" id="mobile-menu">
+      <a class="page-link block py-2" data-page="home" href="#">Home</a>
+      <a class="page-link block py-2" data-page="gallery" href="#">Galeria</a>
+      <a class="page-link block py-2" data-page="about" href="#">Sobre</a>
+      <a class="page-link block py-2" data-page="contact" href="#">Contato</a>
+      <a class="page-link block py-2" data-page="linktree" href="#">linktree</a>
+    </div>
+  </header>
+
+
+
+
+  <!-- ! HOME PAGE -->
+  <div class="page-container active" id="home">
+    <!-- ? Hero -->
+
+    <section class="pb-12 h-svw flex justify-center items-center">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+
+        <div class="space-y-6">
+          <h1 class="text-4xl md:text-5xl font-bold">Arte que conta histórias</h1>
+          <p class="text-lg text-gray-700">
+            Cada obra carrega uma alma, uma história, um sentimento. Descubra pinturas únicas que falam direto ao
+            coração — e leve para casa uma arte que emociona e transforma espaços.
+          </p>
+
+          <div class="flex space-x-4">
+            <a class="btn-primary"
+              href="https://wa.me/5591982323766?text=Olá,%20Naty!%20Vi%20suas%20obras%20no%20site%20e%20me%20interessei%20bastante.%20Gostaria%20de%20encomendar%20uma%20tela%20—%20poderia%20me%20explicar%20como%20funciona%3F"
+              target="_blank" rel="noopener noreferrer">
+              <i class="fas fa-shopping-bag mr-2"></i> Encomendar</a>
+            <a class="page-link inline-flex items-center border-b-2 border-accent" data-page="gallery" href="#">
+              Ver galeria <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="w-full flex justify-center items-center">
+          <div
+            class="bg-zinc-100 rounded-2xl overflow-hidden shadow-2xl flex justify-center items-center p-4 max-w-[400px]">
+            <img alt="Obra Estilo 2" class="object-contain rounded-lg" src="image/img11.jpg" />
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ? Destaque da galeria  -->
+    <section class="py-12 px-4">
+      <h2 class="text-3xl font-bold mb-10 text-center">Destaques da Galeria</h2>
+      <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+
+        <!-- Estilo 1 -->
+        <div
+          class="bg-zinc-100 rounded-2xl overflow-hidden shadow-2xl transition-transform transform duration-300 ease-in-out hover:-translate-y-1"
+          gallery="cards" data-category="DestaqueGaleria">
+          <div class="bg-zinc-100 flex justify-center items-center p-4 h-[300px]">
+            <img data-open-modal="true" src="image/img1.jpg" alt="Obra Estilo 1"
+              class="max-w-full max-h-full object-contain rounded-lg">
+          </div>
+        </div>
+
+        <!-- Estilo 2 -->
+        <div
+          class="bg-zinc-100 rounded-2xl overflow-hidden shadow-2xl transition-transform transform duration-300 ease-in-out hover:-translate-y-1"
+          gallery="cards" data-category="DestaqueGaleria">
+          <div class="bg-zinc-100 flex justify-center items-center p-4 h-[300px]">
+            <img src="image/img2.jpg" alt="Obra Estilo 1" class="max-w-full max-h-full object-contain rounded-lg">
+          </div>
+        </div>
+
+        <!-- Estilo 3 -->
+        <div
+          class="bg-zinc-100 rounded-2xl overflow-hidden shadow-2xl transition-transform transform duration-300 ease-in-out hover:-translate-y-1"
+          gallery="cards" data-category="DestaqueGaleria">
+          <div class="bg-zinc-100 flex justify-center items-center p-4 h-[300px]">
+            <img src="image/img13.jpg" alt="Obra Estilo 1" class="max-w-full max-h-full object-contain rounded-lg">
+          </div>
+        </div>
+
+        <!-- Estilo 4 -->
+        <div
+          class="bg-zinc-100 rounded-2xl overflow-hidden shadow-2xl transition-transform transform duration-300 ease-in-out hover:-translate-y-1"
+          gallery="cards" data-category="DestaqueGaleria">
+          <div class="bg-zinc-100 flex justify-center items-center p-4 h-[300px]">
+            <img src="image/img14.jpg" alt="Obra Estilo 1" class="max-w-full max-h-full object-contain rounded-lg">
+          </div>
+        </div>
+
+        <!-- Estilo 5 -->
+        <div
+          class="bg-zinc-100 rounded-2xl overflow-hidden shadow-2xl transition-transform transform duration-300 ease-in-out hover:-translate-y-1"
+          gallery="cards" data-category="DestaqueGaleria">
+          <div class="bg-zinc-100 flex justify-center items-center p-4 h-[300px]">
+            <img src="image/img25.jpg" alt="Obra Estilo 1" class="max-w-full max-h-full object-contain rounded-lg">
+          </div>
+        </div>
+
+        <!-- Estilo 6 -->
+        <div
+          class="bg-zinc-100 rounded-2xl overflow-hidden shadow-2xl transition-transform transform duration-300 ease-in-out hover:-translate-y-1"
+          gallery="cards" data-category="DestaqueGaleria">
+          <div class="bg-zinc-100 flex justify-center items-center p-4 h-[300px]">
+            <img src="image/img26.jpg" alt="Obra Estilo 1" class="max-w-full max-h-full object-contain rounded-lg">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ? Feedback dos Clientes -->
+    <section class="py-12 bg-gray-50 rounded-xl p-8 my-12">
+      <div class="text-center mb-8">
+        <h3 class="text-2xl font-semibold mb-4">Feedback dos Clientes</h3>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <div class="bg-white p-6 rounded-lg shadow-sm">
+          <p class="italic text-gray-600 mb-4">""Quando vi a pintura pela primeira vez, senti como se ela tivesse sido
+            feita especialmente pra mim. Cada detalhe transmite uma emoção única. É mais do que arte, é sentimento
+            puro."
+            "</p>
+          <!-- <p class="font-medium">Nome</p> -->
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-sm">
+          <p class="italic text-gray-600 mb-4">
+            "Comprei uma pintura para dar de presente e foi emocionante. A artista conseguiu capturar exatamente o que
+            eu queria transmitir. Foi algo realmente especial."
+          </p>
+          <!-- <p class="font-medium">Nome</p> -->
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-sm">
+          <p class="italic text-gray-600 mb-4">
+            "A obra transformou completamente o ambiente da minha sala. Além de linda, carrega uma energia que atrai
+            todos os olhares. Todo mundo pergunta de onde é!"
+          </p>
+          <!-- <p class="font-medium">Nome</p> -->
+        </div>
+      </div>
+    </section>
+
+    <!--? Texto De Marketing -->
+    <section class="pt-12">
+      <div class="bg-accent bg-opacity-10 rounded-xl p-8">
+        <div class="grid md:grid-cols-2 gap-8 items-center">
+          <div class="space-y-4">
+            <h3 class="text-3xl font-bold">
+              Como um Poliglota, fala muitas línguas. Um Artista expressa vários sentimentos.
+            </h3>
+            <p class="text-gray-700">
+              Cada obra é uma expressão única de emoções, traduzida em cores, formas e texturas. Ao adquirir uma peça
+              personalizada, você leva não apenas arte, mas um reflexo genuíno da artista. Entre em contato e crie algo
+              exclusivo, feito especialmente para você.
+            </p>
+            <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+              <a class="btn-primary text-center"
+                href="https://wa.me/5591982323766?text=Olá,%20Naty!%20Vi%20suas%20obras%20no%20site%20e%20me%20interessei%20bastante.%20Gostaria%20de%20encomendar%20uma%20tela%20—%20poderia%20me%20explicar%20como%20funciona%3F"
+                target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-whatsapp mr-2"></i>
+                WhatsApp</a>
+              <a class="btn-primary text-center bg-opacity-90"
+                href="mailto:contato@artnatysantis.com.br?subject=Encomenda%20de%20tela%20via%20site&body=Olá,%20Naty!%20Vi%20suas%20obras%20no%20site%20e%20me%20interessei%20bastante.%20Gostaria%20de%20encomendar%20uma%20tela%20—%20poderia%20me%20explicar%20como%20funciona?"><i
+                  class="fas fa-envelope mr-2"></i> Email</a>
+
+            </div>
+          </div>
+
+          <div class="w-full flex justify-center items-center">
+            <div
+              class="bg-zinc-100 rounded-2xl overflow-hidden shadow-2xl flex justify-center items-center p-4 max-w-[400px]">
+              <img alt="Obra Estilo 2" class="object-contain rounded-lg" src="image/img11.jpg" />
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ! GALLERY PAGE -->
+  <div class="page-container" id="gallery">
+
+
+    <!--? Galeria  -->
+    <section class="pb-12">
+      <h1 class="text-4xl font-bold mb-12 text-center">GALERIA</h1>
+
+      <!--? Filtros -->
+      <div class="gallery-filter flex flex-wrap justify-center mb-12">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="estilo1">Estilo 1</button>
+        <button class="filter-btn" data-filter="estilo2">Estilo 2</button>
+        <button class="filter-btn" data-filter="estilo3">Estilo 3</button>
+        <button class="filter-btn" data-filter="estilo4">Estilo 4</button>
+        <button class="filter-btn" data-filter="estilo5">Estilo 5</button>
+        <button class="filter-btn" data-filter="estilo6">Estilo 6</button>
+      </div>
+
+      <!--? Fotos  -->
+      <div class="
+      columns-1 
+      sm:columns-2 
+      md:columns-3 
+      lg:columns-4 
+      [&>div:not(:first-child)]:mt-4
+      gap-4 px-4 ">
+
+        <div class="
+        bg-zinc-100
+        rounded-2xl
+        overflow-hidden
+        shadow-2xl
+        transition-transform 
+        transform duration-300 ease-in-out
+        hover:translate-y-[-5px]
+        max-w-[256px]
+        " gallery="cards" data-category="estilo2">
+          <div class="bg-zinc-100 flex justify-center items-center min-h-24 p-4">
+            <img src="image/img12.jpg" alt="Obra Estilo 2Obra #1Estilo 2 "
+              class="w-full h-full rounded-lg cursor-pointer" data-open-modal="true" data-title="O Coração do Silêncio"
+              data-description="Essa obra explora o contraste entre a serenidade e a intensidade emocional através de pinceladas suaves e tons quentes."
+              data-feedback="Essa pintura me tocou profundamente. Trouxe uma energia nova para meu lar. — Cliente A" />
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!--? Texto De Marketing -->
+    <section class="pt-12">
+      <div class="bg-accent bg-opacity-10 rounded-xl p-8">
+        <div class="grid md:grid-cols-2 gap-8 items-center">
+          <div class="space-y-4">
+            <h3 class="text-3xl font-bold">
+              Como um Poliglota, fala muitas línguas. Um Artista expressa vários sentimentos.
+            </h3>
+            <p class="text-gray-700">
+              Cada obra é uma expressão única de emoções, traduzida em cores, formas e texturas. Ao adquirir uma peça
+              personalizada, você leva não apenas arte, mas um reflexo genuíno da artista. Entre em contato e crie algo
+              exclusivo, feito especialmente para você.
+            </p>
+            <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+              <a class="btn-primary text-center"
+                href="https://wa.me/5591982323766?text=Olá,%20Naty!%20Vi%20suas%20obras%20no%20site%20e%20me%20interessei%20bastante.%20Gostaria%20de%20encomendar%20uma%20tela%20—%20poderia%20me%20explicar%20como%20funciona%3F"
+                target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-whatsapp mr-2"></i>
+                WhatsApp</a>
+              <a class="btn-primary text-center bg-opacity-90"
+                href="mailto:contato@artnatysantis.com.br?subject=Encomenda%20de%20tela%20via%20site&body=Olá,%20Naty!%20Vi%20suas%20obras%20no%20site%20e%20me%20interessei%20bastante.%20Gostaria%20de%20encomendar%20uma%20tela%20—%20poderia%20me%20explicar%20como%20funciona?"><i
+                  class="fas fa-envelope mr-2"></i> Email</a>
+
+            </div>
+          </div>
+
+          <div class="w-full flex justify-center items-center">
+            <div
+              class="bg-zinc-100 rounded-2xl overflow-hidden shadow-2xl flex justify-center items-center p-4 max-w-[400px]">
+              <img alt="Obra Estilo 2" class="object-contain rounded-lg" src="image/img11.jpg" />
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ! ABOUT PAGE -->
+  <div class="page-container" id="about">
+    <!--? Sobre mim  -->
+    <section class="pb-12">
+      <h1 class="text-4xl font-bold mb-12 text-center">SOBRE</h1>
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+
+
+        <div class="w-full flex justify-center items-center">
+          <div
+            class="bg-zinc-100 rounded-2xl overflow-hidden shadow-2xl flex justify-center items-center p-4 max-w-[400px]">
+            <img alt="Obra Estilo 2" class="object-contain rounded-lg" src="image/img11.jpg" />
+          </div>
+        </div>
+
+
+        <div class="space-y-6">
+          <h2 class="text-3xl font-bold">Natália</h2>
+          <p class="text-gray-700">
+            “Oi, seja bem-vindo(a)! Hoje, a arte é meu espaço de respiro, onde consigo transformar sentimentos em
+            imagens. Cada obra nasce de uma emoção e carrega um pedaço de mim — meu jeito de ver e sentir o mundo.”
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+    <!--? Raízes Criativas -->
+    <section class="py-12 bg-gray-50 rounded-xl p-8">
+      <h2 class="text-3xl font-bold mb-8 text-center">Raízes Criativas</h2>
+
+      <p class="text-center max-w-3xl mx-auto mb-12">
+        Desde pequena, eu era o tipo de criança que nunca largava o lápis. Adorava desenhar — mesmo que fossem só
+        bonecos de palito, casinhas tortas ou rabiscos que nem eu mesma entendia. Me perdia por horas criando mundos no
+        papel.
+      </p>
+
+      <p class="text-center max-w-3xl mx-auto mb-12">
+        Mas foi aos 11 anos que algo mudou. Comecei a querer me desafiar
+        mais, fazer desenhos diferentes, mais detalhados. Tudo por causa da minha prima, que fazia várias ilustrações e
+        colava na parede do quarto dela. Achei aquilo incrível e decidi que também queria encher minha parede com meus
+        desenhos — transformar meu quarto simples em um espaço cheio de cor e personalidade.
+      </p>
+
+      <p class="text-center max-w-3xl mx-auto mb-12">
+        Foi aí que percebi: a arte era mais do que um passatempo. Aquilo que eu não conseguia dizer em palavras, eu
+        aprendia a colocar em traços, cores e pinceladas. A arte virou meu jeito de conversar com o mundo — e, mais do
+        que isso, de me entender.
+      </p>
+
+    </section>
+
+    <!--? Estilo de pintura -->
+    <section class="py-12">
+      <h2 class="text-3xl font-bold mb-8 text-center">Estilos de Pinturas</h2>
+      <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+
+        <div>
+          <div class=" bg-zinc-100 rounded-2xl overflow-hidden shadow-2xl transition-transform transform duration-300
+          ease-in-out hover:-translate-y-1">
+
+            <div class="bg-zinc-100 flex justify-center items-center p-4 h-[300px]">
+              <img src="image/img1.jpg" alt="Obra Estilo 1" class="max-w-full max-h-full object-contain rounded-lg">
+            </div>
+
+            <div class="pl-4 pb-4 pr-4">
+              <h3 class="font-semibold">Estilo 1</h3>
+              <p class="text-sm text-gray-600">Descrição breve do estilo de pintura.</p>
+            </div>
+
+          </div>
+        </div>
+
+        <div>
+          <div class=" bg-zinc-100 rounded-2xl overflow-hidden shadow-2xl transition-transform transform duration-300
+          ease-in-out hover:-translate-y-1">
+
+            <div class="bg-zinc-100 flex justify-center items-center p-4 h-[300px]">
+              <img src="image/img11.jpg" alt="Obra Estilo 2" class="max-w-full max-h-full object-contain rounded-lg">
+            </div>
+
+            <div class="pl-4 pb-4 pr-4">
+              <h3 class="font-semibold">Estilo 1</h3>
+              <p class="text-sm text-gray-600">Descrição breve do estilo de pintura.</p>
+            </div>
+
+          </div>
+        </div>
+
+        <div>
+          <div class=" bg-zinc-100 rounded-2xl overflow-hidden shadow-2xl transition-transform transform duration-300
+          ease-in-out hover:-translate-y-1">
+
+            <div class="bg-zinc-100 flex justify-center items-center p-4 h-[300px]">
+              <img src="image/img21.jpg" alt="Obra Estilo 3" class="max-w-full max-h-full object-contain rounded-lg">
+            </div>
+
+            <div class="pl-4 pb-4 pr-4">
+              <h3 class="font-semibold">Estilo 1</h3>
+              <p class="text-sm text-gray-600">Descrição breve do estilo de pintura.</p>
+            </div>
+
+          </div>
+        </div>
+
+        <div>
+          <div class=" bg-zinc-100 rounded-2xl overflow-hidden shadow-2xl transition-transform transform duration-300
+          ease-in-out hover:-translate-y-1">
+
+            <div class="bg-zinc-100 flex justify-center items-center p-4 h-[300px]">
+              <img src="image/img4.jpg" alt="Obra Estilo 4" class="max-w-full max-h-full object-contain rounded-lg">
+            </div>
+
+            <div class="pl-4 pb-4 pr-4">
+              <h3 class="font-semibold">Estilo 1</h3>
+              <p class="text-sm text-gray-600">Descrição breve do estilo de pintura.</p>
+            </div>
+
+          </div>
+        </div>
+
+        <div>
+          <div class=" bg-zinc-100 rounded-2xl overflow-hidden shadow-2xl transition-transform transform duration-300
+          ease-in-out hover:-translate-y-1">
+
+            <div class="bg-zinc-100 flex justify-center items-center p-4 h-[300px]">
+              <img src="image/img14.jpg" alt="Obra Estilo 5" class="max-w-full max-h-full object-contain rounded-lg">
+            </div>
+
+            <div class="pl-4 pb-4 pr-4">
+              <h3 class="font-semibold">Estilo 1</h3>
+              <p class="text-sm text-gray-600">Descrição breve do estilo de pintura.</p>
+            </div>
+
+          </div>
+        </div>
+
+        <div>
+          <div class=" bg-zinc-100 rounded-2xl overflow-hidden shadow-2xl transition-transform transform duration-300
+          ease-in-out hover:-translate-y-1">
+
+            <div class="bg-zinc-100 flex justify-center items-center p-4 h-[300px]">
+              <img src="image/img24.jpg" alt="Obra Estilo 1" class="max-w-full max-h-full object-contain rounded-lg">
+            </div>
+
+            <div class="pl-4 pb-4 pr-4">
+              <h3 class="font-semibold">Estilo 1</h3>
+              <p class="text-sm text-gray-600">Descrição breve do estilo de pintura.</p>
+            </div>
+
+          </div>
+        </div>
+
+
+
+
+    </section>
+
+    <!-- ? Propósito -->
+    <section
+      class="py-12 bg-[url('./assets/imgGaleria/Dias_melhore_viram.jpg')] bg-cover bg-center bg-no-repeat relative rounded-2xl">
+      <div class="absolute inset-0 bg-black/50 rounded-2xl"></div>
+
+      <div class="relative z-10 text-white text-center px-4">
+        <h2 class="text-3xl font-bold mb-8">Propósitos da Artista</h2>
+        <p class="max-w-2xl mx-auto mb-12"></p>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div>
+            <i class="fas fa-comment-dots text-4xl mb-4"></i>
+            <h3 class="text-xl font-semibold mb-2">Dar Voz ao Invisível</h3>
+            <p class="text-sm">Cada obra carrega uma história que talvez nunca tenha sido dita. Através da arte,
+              narrativas ocultas ganham forma e vida.</p>
+          </div>
+
+          <div>
+            <i class="fas fa-hand-holding-heart text-4xl mb-4"></i>
+            <h3 class="text-xl font-semibold mb-2">Transmitir Conforto</h3>
+            <p class="text-sm">Que cada traço seja como um abraço silencioso, trazendo paz e acolhimento a quem observa.
+            </p>
+          </div>
+
+          <div>
+            <i class="fas fa-heartbeat text-4xl mb-4"></i>
+            <h3 class="text-xl font-semibold mb-2">Despertar Sentimentos</h3>
+            <p class="text-sm">Mais do que ver, é sobre sentir. Permitir que cada pessoa crie sua própria conexão
+              emocional com a obra.</p>
+          </div>
+
+          <div>
+            <i class="fas fa-brain text-4xl mb-4"></i>
+            <h3 class="text-xl font-semibold mb-2">Provocar Reflexão</h3>
+            <p class="text-sm">A arte como convite à pausa — um momento de olhar para dentro, pensar e enxergar o mundo
+              por outra perspectiva.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--? Texto De Marketing -->
+    <section class="pt-12">
+      <div class="bg-accent bg-opacity-10 rounded-xl p-8">
+        <div class="grid md:grid-cols-2 gap-8 items-center">
+          <div class="space-y-4">
+            <h3 class="text-3xl font-bold">
+              Como um Poliglota, fala muitas línguas. Um Artista expressa vários sentimentos.
+            </h3>
+            <p class="text-gray-700">
+              Cada obra é uma expressão única de emoções, traduzida em cores, formas e texturas. Ao adquirir uma peça
+              personalizada, você leva não apenas arte, mas um reflexo genuíno da artista. Entre em contato e crie algo
+              exclusivo, feito especialmente para você.
+            </p>
+            <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+              <a class="btn-primary text-center"
+                href="https://wa.me/5591982323766?text=Olá,%20Naty!%20Vi%20suas%20obras%20no%20site%20e%20me%20interessei%20bastante.%20Gostaria%20de%20encomendar%20uma%20tela%20—%20poderia%20me%20explicar%20como%20funciona%3F"
+                target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-whatsapp mr-2"></i>
+                WhatsApp</a>
+              <a class="btn-primary text-center bg-opacity-90"
+                href="mailto:contato@artnatysantis.com.br?subject=Encomenda%20de%20tela%20via%20site&body=Olá,%20Naty!%20Vi%20suas%20obras%20no%20site%20e%20me%20interessei%20bastante.%20Gostaria%20de%20encomendar%20uma%20tela%20—%20poderia%20me%20explicar%20como%20funciona?"><i
+                  class="fas fa-envelope mr-2"></i> Email</a>
+
+            </div>
+          </div>
+
+          <div class="w-full flex justify-center items-center">
+            <div
+              class="bg-zinc-100 rounded-2xl overflow-hidden shadow-2xl flex justify-center items-center p-4 max-w-[400px]">
+              <img alt="Obra Estilo 2" class="object-contain rounded-lg" src="image/img11.jpg" />
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- ! CONTACT PAGE -->
+  <div class="page-container" id="contact">
+    <!-- ? Formulário -->
+    <section class="pb-12">
+      <h1 class="text-4xl font-bold mb-12 text-center">CONTATO</h1>
+      <div class="grid md:grid-cols-2 gap-12">
+        <div>
+          <h2 class="text-2xl font-bold mb-6">Vamos conversar</h2>
+          <p class="text-gray-700 mb-8">Ficarei feliz em receber sua mensagem para responder dúvidas, receber
+            feedback ou discutir encomendas personalizadas.</p>
+          <div class="space-y-4 mb-8">
+            <div class="flex items-center">
+              <i class="fas fa-envelope text-accent text-xl w-10"></i>
+              <span><a
+                  href="mailto:contato@artnatysantis.com.br?subject=Encomenda%20de%20tela%20via%20site&body=Olá,%20Naty!%20Vi%20suas%20obras%20no%20site%20e%20me%20interessei%20bastante.%20Gostaria%20de%20encomendar%20uma%20tela%20—%20poderia%20me%20explicar%20como%20funciona?">
+                  contato@natysantis.art.com
+                </a></span>
+            </div>
+
+            <div class="flex items-center">
+              <i class="fab fa-whatsapp text-accent text-xl w-10"></i>
+              <span><a
+                  href="https://wa.me/5591982323766?text=Olá,%20Naty!%20Vi%20suas%20obras%20no%20site%20e%20me%20interessei%20bastante.%20Gostaria%20de%20encomendar%20uma%20tela%20—%20poderia%20me%20explicar%20como%20funciona%3F"
+                  target="_blank" rel="noopener noreferrer">(91) 9 8232-3766</a></span>
+
+            </div>
+            <div class="flex items-center">
+              <i class="fas fa-map-marker-alt text-accent text-xl w-10"></i>
+              <span>Ananindeua, Pará (PA)</span>
+            </div>
+          </div>
+          <div class="social-icons flex mt-8">
+            <a class="mr-4" href="https://www.instagram.com/artnatysantis/" target="_blank" rel="noopener noreferrer"><i
+                class="fab fa-instagram"></i></a>
+            <a class="mr-4"
+              href="https://wa.me/5591982323766?text=Olá,%20Naty!%20Vi%20suas%20obras%20no%20site%20e%20me%20interessei%20bastante.%20Gostaria%20de%20encomendar%20uma%20tela%20—%20poderia%20me%20explicar%20como%20funciona%3F"
+              target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+            <a class="mr-4"
+              href="mailto:contato@artnatysantis.com.br?subject=Encomenda%20de%20tela%20via%20site&body=Olá,%20Naty!%20Vi%20suas%20obras%20no%20site%20e%20me%20interessei%20bastante.%20Gostaria%20de%20encomendar%20uma%20tela%20—%20poderia%20me%20explicar%20como%20funciona?"><i
+                class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-sm">
+          <form action="https://formsubmit.co/kaboso3941@daxiake.com" method="POST">
+            <input type="hidden" name="_template" value="table">
+
+            <!-- ! Nome -->
+            <div class="mb-4">
+              <label class="block text-gray-700 mb-2" for="name">Nome</label>
+              <input class="contact-input w-full" id="name" name="name" type="text" required
+                placeholder="Digite aqui Pablo" />
+            </div>
+
+            <!-- ! email -->
+            <div class="mb-4">
+              <label class="block text-gray-700 mb-2" for="email">Email</label>
+              <input class="contact-input w-full" id="email" name="email" type="email" required
+                placeholder="Digite aqui email@email.com" />
+            </div>
+            <!-- ! Número de Contato -->
+            <div class="mb-4">
+              <label class="block text-gray-700 mb-2" for="number">Número de contato</label>
+              <input class="contact-input w-full" id="number" name="number" type="number" required
+                placeholder="Ex: 91912345678" />
+            </div>
+
+            <!-- ! Mensagem  -->
+            <div class="mb-6">
+              <label class="block text-gray-700 mb-2" for="message">Mensagem</label>
+              <textarea class="contact-input w-full resize-none" id="message" name="message" required rows="5"
+                placeholder="Digite aqui uma mensagem"></textarea>
+            </div>
+            <!-- ! Botão de enviar -->
+            <button class="btn-primary w-full" type="submit">Enviar Mensagem</button>
+
+            <!--! Configurações  -->
+            <input type="hidden" name="_subject" value="Encomenda de quadro!"> <!-- Colocar o Assunto -->
+            <input type="hidden" name="_captcha" value="false">
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ? Acompanhe nosso Trabalho -->
+    <section class="py-12 bg-gray-50 rounded-xl p-8">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full">
+          <div class="image-placeholder">
+            <img alt="Imagem" class="w-full h-auto object-cover rounded-lg" src="image/img26.jpg" />
+          </div>
+
+          <div class="image-placeholder">
+            <img alt="Imagem" class="w-full h-auto object-cover rounded-lg" src="image/img26.jpg" />
+          </div>
+
+          <div class="image-placeholder">
+            <img alt="Imagem" class="w-full h-auto object-cover rounded-lg" src="image/img27.jpg" />
+          </div>
+
+          <div class="image-placeholder">
+            <img alt="Imagem" class="w-full h-auto object-cover rounded-lg" src="image/img28.jpg" />
+          </div>
+        </div>
+
+
+
+        <div class="space-y-6">
+          <h2 class="text-3xl font-bold">Acompanhe meu trabalho</h2>
+          <p class="text-gray-700">Siga minhas redes sociais para ficar por dentro das novidades, processos
+            criativos e promoções especiais.</p>
+          <a class="btn-primary inline-flex items-center" href="https://www.instagram.com/artnatysantis/"
+            target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-instagram mr-2"></i> Seguir no Instagram
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ! LINKTREE PAGE -->
+  <div class="page-container" id="linktree">
+    <section class="pb-12 max-w-md mx-auto">
+
+      <!--? Foto e nome -->
+      <div class="text-center mb-12">
+        <div class="w-32 h-32 rounded-full mx-auto mb-6 bg-gray-100 flex items-center justify-center"><img alt="Logo"
+            class="w-32 h-32 rounded-full object-cover mx-auto" src="image/img29.jpg" /></div>
+        <h1 class="text-2xl font-bold mb-2">Naty - Artista</h1>
+        <p class="text-gray-600">Conecte-se comigo através desses links</p>
+      </div>
+
+      <!--? Arvore de Links -->
+      <div class="space-y-4">
+
+        <a class="flex p-4 mb-4 bg-white rounded-2xl items-center transition-transform duration-300 ease-in-out hover:-translate-y-1 sadow-sm"
+          href="https://www.natysantis.art.br" linkTreeActive="true">
+          <i class="fas fa-globe w-10 text-accent text-xl "></i>
+          <span>Web Site</span>
+          <i class="fas fa-arrow-right ml-auto"></i>
+        </a>
+
+        <a class="flex p-4 mb-4 bg-white rounded-2xl items-center transition-transform duration-300 ease-in-out hover:-translate-y-1 sadow-sm"
+          href="https://wa.me/5591982323766?text=Olá,%20Naty!%20Vi%20suas%20obras%20no%20site%20e%20me%20interessei%20bastante.%20Gostaria%20de%20encomendar%20uma%20tela%20—%20poderia%20me%20explicar%20como%20funciona%3F"
+          target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-whatsapp w-10 text-accent text-xl"></i>
+
+          <span>WhatsApp</span>
+          <i class="fas fa-arrow-right ml-auto"></i>
+        </a>
+
+        <a class="flex p-4 mb-4 bg-white rounded-2xl items-center transition-transform duration-300 ease-in-out hover:-translate-y-1 sadow-sm"
+          href="https://www.instagram.com/artnatysantis" target="_blank" rel="noopener noreferrer"
+          linkTreeActive="true">
+          <i class="fab fa-instagram w-10 text-accent text-xl"></i>
+          <span>Instagram</span>
+          <i class="fas fa-arrow-right ml-auto"></i>
+        </a>
+
+        <a class="flex p-4 mb-4 bg-white rounded-2xl items-center transition-transform duration-300 ease-in-out hover:-translate-y-1 sadow-sm"
+          href="mailto:contato@artnatysantis.com.br?subject=Encomenda%20de%20tela%20via%20site&body=Olá,%20Naty!%20Vi%20suas%20obras%20no%20site%20e%20me%20interessei%20bastante.%20Gostaria%20de%20encomendar%20uma%20tela%20—%20poderia%20me%20explicar%20como%20funciona?contato@artnatysantis.com.br?subject=Encomenda%20de%20tela%20via%20site&body=Olá,%20Naty!%20Vi%20suas%20obras%20no%20site%20e%20me%20interessei%20bastante.%20Gostaria%20de%20encomendar%20uma%20tela%20—%20poderia%20me%20explicar%20como%20funciona?"
+          linkTreeActive="true">
+          <i class="fas fa-envelope w-10 text-accent text-xl"></i>
+          <span>Email</span>
+          <i class="fas fa-arrow-right ml-auto"></i>
+        </a>
+
+        <!--! Links Desativados        
+        <a class="hidden p-4 mb-4 bg-white rounded-2xl items-center transition-transform duration-300 ease-in-out hover:-translate-y-1 sadow-sm"
+          href="#" linkTreeActive="false">
+          <i class="fab fa-facebook w-10 text-accent text-xl"></i>
+          <span>Facebook</span>
+          <i class="fas fa-arrow-right ml-auto"></i>
+        </a>
+
+        <a class=" hidden flex p-4 mb-4 bg-white rounded-2xl items-center transition-transform duration-300 ease-in-out hover:-translate-y-1 sadow-sm"
+          href="#" linkTreeActive="false">
+          <i class="fab fa-pinterest w-10 text-accent text-xl"></i>
+          <span>Pinterest</span>
+          <i class="fas fa-arrow-right ml-auto"></i>
+        </a>
+
+        <a class="hidden flex p-4 mb-4 bg-white rounded-2xl items-center transition-transform duration-300 ease-in-out hover:-translate-y-1 sadow-sm"
+          href="#" linkTreeActive="false">
+          <i class="fab fa-etsy w-10 text-accent text-xl"></i>
+          <span>Loja Online</span>
+          <i class="fas fa-arrow-right ml-auto"></i>
+        </a> -->
+
+      </div>
+    </section>
+  </div>
+
+  <!-- ! Footer -->
+  <footer class="bg-gray-50 py-12">
+    <div class="mx-auto px-4">
+
+      <div class="flex flex-col md:flex-row justify-center w-full mx-auto">
+
+        <div class="grid sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8 w-full max-w-full">
+
+
+          <!-- Logo e texto de marketing -->
+          <div class="mb-8 md:mb-0">
+
+            <a class="page-link flex items-center" data-page="home" href="#">
+              <span class="h-16 mb-4 flex justify-center items-center overflow-hidden">
+
+                <img src="assets/lg/lg-Natalia-Art.png" alt="Logo Natalia Santiago"
+                  class="h-auto w-auto max-h-full max-w-full object-contain">
+
+              </span>
+            </a>
+
+            <p class="text-gray-600 max-w-xs">Arte única que traduz emoções e sentimentos através das pinceladas.</p>
+          </div>
+
+          <!-- Navegação da página -->
+          <div>
+            <h4 class="font-semibold mb-4">Navegação</h4>
+            <ul class="space-y-2">
+              <li><a class="page-link text-gray-600 hover:text-accent" data-page="home" href="#">Home</a>
+              </li>
+              <li><a class="page-link text-gray-600 hover:text-accent" data-page="gallery" href="#">Galeria</a></li>
+              <li><a class="page-link text-gray-600 hover:text-accent" data-page="about" href="#">Sobre</a></li>
+              <li><a class="page-link text-gray-600 hover:text-accent" data-page="contact" href="#">Contato</a></li>
+              <li><a class="page-link text-gray-600 hover:text-accent" data-page="linktree" href="#">Linktree</a></li>
+            </ul>
+          </div>
+
+          <!-- Link de Contato -->
+          <div>
+            <h4 class="font-semibold mb-4">Contato</h4>
+            <ul class="space-y-2">
+              <li class="flex items-center text-gray-600">
+                <i class="fas fa-envelope w-6"></i>
+                <span>
+                  <a
+                    href="mailto:contato@artnatysantis.com.br?subject=Encomenda%20de%20tela%20via%20site&body=Olá,%20Naty!%20Vi%20suas%20obras%20no%20site%20e%20me%20interessei%20bastante.%20Gostaria%20de%20encomendar%20uma%20tela%20—%20poderia%20me%20explicar%20como%20funciona?">
+                    contato@artnatysantis.com.br
+                  </a>
+                </span>
+              </li>
+              <li class="flex items-center text-gray-600">
+                <i class="fab fa-whatsapp w-6"></i>
+                <span>
+                  <a href="https://wa.me/5591982323766?text=Olá,%20Naty!%20Vi%20suas%20obras%20no%20site%20e%20me%20interessei%20bastante.%20Gostaria%20de%20encomendar%20uma%20tela%20—%20poderia%20me%20explicar%20como%20funciona%3F"
+                    target="_blank" rel="noopener noreferrer">
+                    (91) 9 8232-3766
+                  </a>
+                </span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Link de Rede Social -->
+          <div>
+            <h4 class="font-semibold mb-4">Redes Sociais</h4>
+            <div class="flex space-x-4">
+              <a class="text-gray-600 hover:text-accent" href="https://www.instagram.com/artnatysantis" target="_blank"
+                rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+              <a class="text-gray-600 hover:text-accent"
+                href="https://wa.me/5591982323766?text=Olá,%20Naty!%20Vi%20suas%20obras%20no%20site%20e%20me%20interessei%20bastante.%20Gostaria%20de%20encomendar%20uma%20tela%20—%20poderia%20me%20explicar%20como%20funciona%3F"
+                target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="border-t border-gray-200 mt-12 pt-6 text-center text-gray-500 text-sm">
+        <p>© 2025 Naty - Artista. Todos os direitos reservados.</p>
+        <!-- <p class="mt-1">Feito com <span class="text-red-500">♥</span> em Next.js, TypeScript e Tailwind CSS</p> -->
+      </div>
+
+    </div>
+  </footer>
+
+  <!--! Modal  -->
+  <div id="image-modal"
+    class="fixed inset-0 z-50 bg-black bg-opacity-70 flex justify-center items-center opacity-0 transition-opacity duration-300 ease-out hidden">
+
+    <!-- Modal Container -->
+    <div class="bg-white rounded-2xl p-4 w-full max-w-5xl mx-4 relative
+              flex flex-col gap-4 overflow-y-auto max-h-[90vh]
+              md:grid md:grid-cols-2 md:gap-4 md:overflow-hidden md:h-auto">
+
+      <!-- Botão de Fechar -->
+      <button id="modal-close"
+        class="absolute top-4 right-4 text-gray-500 hover:text-[--accent] text-2xl font-bold fas fa-close"></button>
+
+      <!-- Coluna da Imagem -->
+      <div id="modal-image-column" class="bg-zinc-100 rounded-2xl p-4 flex justify-center items-center">
+        <img id="modal-img" src="" alt="Imagem Ampliada"
+          class="rounded-2xl w-full object-contain max-h-[60vh] md:max-h-[80vh]" />
+      </div>
+
+      <!-- Coluna da Descrição e Feedback -->
+      <div class="flex flex-col gap-4 h-full" id="modal-content-column">
+
+        <!-- Título e Descrição -->
+        <div class="bg-zinc-100 rounded-2xl p-4 flex-1">
+          <h3 id="modal-title" class="text-2xl font-semibold text-gray-900 mb-2"></h3>
+          <p id="modal-description" class="text-base leading-relaxed text-gray-700"></p>
+        </div>
+
+        <!-- Feedback -->
+        <div id="modal-feedback-container" class="bg-zinc-100 rounded-2xl p-4 flex-1">
+          <h4 class="text-sm font-semibold mb-2 text-gray-800">Feedback do Cliente</h4>
+          <p id="modal-feedback" class="text-sm italic text-gray-600"></p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
